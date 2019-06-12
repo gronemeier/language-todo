@@ -2,7 +2,7 @@
 'injectionSelector': 'comment, text.plain'
 'patterns': [
   {
-    'match': '(?<!\\w)@?(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE|WARNING|todo|fixme|changed|xxx|idea|hack|note|review|nb|bug|question|combak|temp|debug|optimize|warning)\\b'
+    'match': '(?<!\\w)@(?i)(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|DEBUG|OPTIMIZE|WARNING)\\b'
     'name': 'storage.type.class.${1:/downcase}'
   }
   {
